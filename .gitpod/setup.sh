@@ -9,5 +9,5 @@ git config --global core.autocrlf input
 docker compose up -d
 sleep 50
 
-touch .env
-echo "MONGO_URI=mongodb://localAdmin:mongolocal@localhost:27017/?authSource=admin&readPreference=primary&ssl=false&directConnection=true" >> .env
+cp .env.example .env
+sed -Ei 's/MONGO_URI=.*/MONGO_URI=mongodb:\/\/localAdmin:mongolocal@localhost:27017\/\?authSource=admin\&readPreference=primary\&ssl=false\&directConnection=true/' .env
