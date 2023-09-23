@@ -6,9 +6,14 @@
 
 tasks:
   - name: Setup Project
-    before: docker compose up -d
+    before: sh .gitpod/setup.sh
     init: npm install
     command: npm run server
+
+ports:
+  - port: 27017
+    onOpen: ignore
+    visibility: private
 
 vscode:
   extensions:
