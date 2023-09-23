@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefail
+set -e
 
 git config --global user.name "Matthew Hemingway"
 git config --global user.email dpplrdr435@gmail.com
