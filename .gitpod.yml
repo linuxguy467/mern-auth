@@ -16,6 +16,7 @@ ports:
     visibility: private
   - port: 5001
     onOpen: ignore
+    visibility: public
 
 vscode:
   extensions:
