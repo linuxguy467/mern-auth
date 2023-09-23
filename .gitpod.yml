@@ -8,6 +8,6 @@ tasks:
   - name: Setup Project
     before: docker compose up -d
     init: npm install
-    command: npm run start
+    command: npm run server
 
 
