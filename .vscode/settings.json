@@ -1,0 +1,24 @@
+{
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "Source Code Pro for Powerline",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 150,
+  "prettier.semi": false,
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 1,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
