@@ -10,4 +10,4 @@ docker compose up -d
 sleep 50
 
 touch .env
-echo "MONGO_URI=mongodb://localAdmin:mongolocal@localhost:27017/test" >> .env
+echo "MONGO_URI=mongodb://localAdmin:mongolocal@localhost:27017/?authSource=admin&readPreference=primary&ssl=false&directConnection=true" >> .env
