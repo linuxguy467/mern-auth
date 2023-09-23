@@ -16,10 +16,8 @@ vscode:
     - vscode-icons-team.vscode-icons
     - formulahendry.auto-close-tag
     - eamodio.gitlens
-    - redhat.vscode-yaml
     - esbenp.prettier-vscode
     - christian-kohler.npm-intellisense
-    - traBpUkciP.vscode-npm-scripts
     - ms-azuretools.vscode-docker
-    - rodrigovallades.es7-react-js-snippets
+    - dsznajder.es7-react-js-snippets
     - mongodb.mongodb-vscode

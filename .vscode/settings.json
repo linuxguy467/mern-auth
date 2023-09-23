@@ -1,8 +1,13 @@
 {
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "editor.fontFamily": "Source Code Pro for Powerline",
+  "terminal.integrated.fontFamily": "'Source Code Pro for Powerline', 'Hack Nerd Font'",
+  "editor.fontSize": 18,
   "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -17,7 +22,7 @@
   "prettier.printWidth": 150,
   "prettier.semi": false,
   "explorer.compactFolders": false,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 1.1,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   }
