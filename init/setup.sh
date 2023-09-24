@@ -11,4 +11,4 @@ docker compose up -d
 sleep 50
 
 cp .env.example .env
-sed -Ei 's/MONGO_URI=.*/MONGO_URI=mongodb:\/\/mernauthuser:mernauthpass@localhost:27017\/\?authSource=admin\&readPreference=primary\&ssl=false\&directConnection=true/' .env
+sed -Ei 's/MONGO_URI=.*/MONGO_URI=mongodb:\/\/mernauthapp:mernauthpass@localhost:27017\/\?authSource=admin\&readPreference=primary\&ssl=false\&directConnection=true/' .env
