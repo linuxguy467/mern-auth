@@ -1,14 +1,15 @@
 version: '3.8'
 
+name: mern_auth
 services:
   mongodb_local:
-    image: mongo:latest
+    image: mongo:7.0.1-jammy
     container_name: mongodb
     ports:
       - 27017:27017
     volumes:
       - mongodb_data:/data/db
-      - ./mongo-init.js:docker-entrypoint-initdb.d/mongo-init.js
+      - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh:ro
     environment:
       MONGO_INITDB_ROOT_USERNAME: localAdmin
       MONGO_INITDB_ROOT_PASSWORD: mongolocal
