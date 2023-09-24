@@ -9,7 +9,7 @@ image:
 
 tasks:
   - name: Setup Project
-    before: sh .gitpod/setup.sh
+    before: sh init/setup.sh
     init: npm install
     command: npm run server
 
