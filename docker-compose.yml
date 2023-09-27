@@ -1,0 +1,14 @@
+version: '3.8'
+
+name: mern_auth
+services:
+  mongodb_local:
+    image: matthem0730/mongo-custom:1.0.0
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
