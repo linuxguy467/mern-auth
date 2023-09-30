@@ -12,5 +12,6 @@ sleep 70
 
 cp .env.example .env
 sed -Ei 's/NODE_ENV=.*/NODE_ENV=development/' .env
-sed -Ei 's/PORT=.*/PORT=5001/' .env
+sed -Ei 's/PORT=.*/PORT=5000/' .env
 sed -Ei 's/MONGO_URI=.*/MONGO_URI=mongodb:\/\/mernauthapp:mernauthpass@localhost:27017\/\?authSource=admin\&readPreference=primary\&ssl=false\&directConnection=true/' .env
+sed -Ei 's/JWT_SECRET=.*/JWT_SECRET=abc123/' .env
