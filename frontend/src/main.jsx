@@ -6,11 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 import HomeScreen from './screens/HomeScreen'
 import RootBoundary from './components/utils/RootBoundary'
+import LoginScreen from './screens/LoginScreen'
+import RegisterScreen from './screens/RegisterScreen.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />} errorElement={<RootBoundary />}>
       <Route index={true} path='/' element={<HomeScreen />} />
+      <Route path='/login' element={<LoginScreen />} />
+      <Route path='/register' element={<RegisterScreen />} />
     </Route>
   )
 )
