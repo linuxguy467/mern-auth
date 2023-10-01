@@ -5,6 +5,7 @@
   "terminal.integrated.fontFamily": "'Source Code Pro for Powerline', 'Hack Nerd Font'",
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
+  "reactSnippets.settings.importReactOnTop": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
