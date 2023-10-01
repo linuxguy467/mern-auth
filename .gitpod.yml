@@ -3,13 +3,15 @@ image: matthem0730/gitpod-workspace:1.0.0
 tasks:
   - name: Setup Project
     before: sh .gitpod/setup.sh
-    init: npm install
+    init: |
+      npm install
+      cd frontend && npm install
     command: npm run dev
 
 ports:
   - port: 27017
     onOpen: ignore
-    visibility: private
+    visibility: public
   - port: 5000
     onOpen: ignore
     visibility: public
