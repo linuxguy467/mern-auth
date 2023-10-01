@@ -4,15 +4,18 @@ tasks:
   - name: Setup Project
     before: sh .gitpod/setup.sh
     init: npm install
-    command: npm run server
+    command: npm run dev
 
 ports:
   - port: 27017
     onOpen: ignore
     visibility: private
-  - port: 5001
+  - port: 5000
     onOpen: ignore
-    visibility: private
+    visibility: public
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
 
 vscode:
   extensions:
@@ -25,4 +28,3 @@ vscode:
     - ms-azuretools.vscode-docker
     - dsznajder.es7-react-js-snippets
     - mongodb.mongodb-vscode
-    - rangav.vscode-thunder-client
