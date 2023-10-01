@@ -7,7 +7,7 @@ git config --global user.email dpplrdr435@gmail.com
 git config --global core.editor vim
 git config --global core.autocrlf input
 
-docker compose up -d -f ./docker-compose.yml
+docker compose up -d
 sleep 70
 
 # Backend environments
