@@ -1,0 +1,35 @@
+{
+  "hostRequirements": {
+     "cpus": 4,
+     "memory": "16gb",
+     "storage": "32gb"
+  },
+  "name": "node-weather-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20.11.0",
+      "nodeGypDependencies": true,
+      "nvmInstallPath": "$HOME/.nvm",
+      "nvmVersion": "latest"
+    },
+    "ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {
+      "jq": "latest",
+      "yq": "latest"
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "1.7.0",
+      "tflint": "latest",
+      "terragrunt": "0.54.0",
+      "installSentinel": true,
+      "installTFSec": true,
+      "installTerraformDocs": true
+    },
+    "ghcr.io/itsmechlark/features/redis-server:1": {
+      "version": "7"
+    },
+    "ghcr.io/devcontainers-contrib/features/mongodb-atlas-cli-homebrew:1": {
+      "version": "latest"
+    }
+  }
+}
