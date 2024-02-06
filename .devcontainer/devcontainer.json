@@ -28,8 +28,6 @@
     "ghcr.io/itsmechlark/features/redis-server:1": {
       "version": "7"
     },
-    "ghcr.io/devcontainers-contrib/features/mongodb-atlas-cli-homebrew:1": {
-      "version": "latest"
-    }
+    "ghcr.io/devcontainers-contrib/features/wget-apt-get:1": {}
   }
 }
