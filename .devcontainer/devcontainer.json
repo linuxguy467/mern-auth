@@ -27,7 +27,6 @@
     },
     "ghcr.io/itsmechlark/features/redis-server:1": {
       "version": "7"
-    },
-    "ghcr.io/devcontainers-contrib/features/wget-apt-get:1": {}
+    }
   }
 }
